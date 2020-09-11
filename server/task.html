@@ -1,0 +1,80 @@
+<meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="api.php?a=taskInfo" method="post" enctype="multipart/form-data">
+    Task Info<br>
+    task_id <input type="input" name="task_id"><br>
+    <input type="submit" value="Send" name="submit">
+</form>
+
+<form action="api.php?a=taskCreate" method="post" enctype="multipart/form-data">
+    Task Create<br>
+    team_id <input type="input" name="team_id"><br>
+    supervisor_login <input type="input" name="supervisor_login"><br>
+    executor_login <input type="input" name="executor_login"><br>
+    name <input type="input" name="name"><br>
+    desc <input type="input" name="desc"><br>
+    important <input type="input" name="important"><br>
+    expired_date <input type="datetime-local" name="expired_date"><br>
+    tasks <input type="input" name="tasks"><br> 
+    <input type="submit" value="Send" name="submit">
+</form>
+
+<form action="api.php?a=taskEdit" method="post" enctype="multipart/form-data">
+    Task Edit<br>
+    task_id <input type="input" name="task_id"><br>
+    supervisor_login <input type="input" name="supervisor_login"><br>
+    executor_login <input type="input" name="executor_login"><br>
+    name <input type="input" name="name"><br>
+    desc <input type="input" name="desc"><br>
+    important <input type="input" name="important"><br>
+    expired_date <input type="datetime-local" name="expired_date"><br>
+    tasks <input type="input" name="tasks"><br> 
+    status <input type="input" name="status"><br> 
+    closed_date <input type="datetime-local" name="closed_date"><br>
+    closed_commentary <input type="input" name="closed_commentary"><br> 
+    <input type="submit" value="Send" name="submit">
+</form>
+
+<form action="api.php?a=taskDelete" method="post" enctype="multipart/form-data">
+    Task Delete<br>
+    task_id <input type="input" name="task_id"><br>
+    <input type="submit" value="Send" name="submit">
+</form>
+
+<form action="api.php?a=taskExectuorAssign" method="post" enctype="multipart/form-data">
+    Task Executor Assign<br>
+    task_id <input type="input" name="task_id"><br>
+    <input type="submit" value="Send" name="submit">
+</form>
+
+<form action="api.php?a=taskExectorLeave" method="post" enctype="multipart/form-data">
+    Task Executor Leave<br>
+    task_id <input type="input" name="task_id"><br>
+    <input type="submit" value="Send" name="submit">
+</form>
+
+<form action="api.php?a=taskStatus" method="post" enctype="multipart/form-data">
+    Task Supervisor/Executor Status<br>
+    task_id <input type="input" name="task_id"><br>
+    status <input type="input" name="status"><br>
+    <input type="submit" value="Send" name="submit">
+</form>
+
+<form action="api.php?a=taskSupervisorClose" method="post" enctype="multipart/form-data">
+    Task Supervisor Close<br>
+    task_id <input type="input" name="task_id"><br>
+    closed_commentary <input type="input" name="closed_commentary"><br>
+    <input type="submit" value="Send" name="submit">
+</form>
+
+<form action="api.php?a=taskSupervisorOpen" method="post" enctype="multipart/form-data">
+    Task Supervisor Open<br>
+    task_id <input type="input" name="task_id"><br>
+    <input type="submit" value="Send" name="submit">
+</form>
+
+</body>
+</html>

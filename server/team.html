@@ -1,0 +1,65 @@
+<meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="api.php?a=teamJoin" method="post" enctype="multipart/form-data">
+    Team Join<br>
+    team_id <input type="input" name="team_id"><br>
+    <input type="submit" value="Send" name="submit">
+</form>
+
+<form action="api.php?a=teamLeave" method="post" enctype="multipart/form-data">
+    Team Leave<br>
+    team_id <input type="input" name="team_id"><br>
+    <input type="submit" value="Send" name="submit">
+</form>
+
+<form action="api.php?a=teamCreate" method="post" enctype="multipart/form-data">
+    Team Create<br>
+    name <input type="input" name="name"><br>
+    private <input type="input" name="private"><br>
+    private_code <input type="input" name="private_code"><br>
+    image <input type="file" name="image"><br>
+    <input type="submit" value="Send" name="submit">
+</form>
+
+<form action="api.php?a=teamDelete" method="post" enctype="multipart/form-data">
+    Team Delete<br>
+    team_id <input type="input" name="team_id"><br>
+    <input type="submit" value="Send" name="submit">
+</form>
+
+<form action="api.php?a=teamEdit" method="post" enctype="multipart/form-data">
+    Team Edit<br>
+    team_id <input type="input" name="team_id"><br>
+    name <input type="input" name="name"><br>
+    private <input type="input" name="private"><br>
+    private_code <input type="input" name="private_code"><br>
+    <input type="submit" value="Send" name="submit">
+</form>
+
+<form action="api.php?a=teamImage" method="post" enctype="multipart/form-data">
+    Team Avatar Upload<br>
+    team_id <input type="input" name="team_id"><br>
+    image <input type="file" name="image"><br>
+    <input type="submit" value="Send" name="submit">
+</form>
+
+<form action="api.php?a=teamAssign" method="post" enctype="multipart/form-data">
+    Team Assign User Rank<br>
+    team_id <input type="input" name="team_id"><br>
+    login <input type="input" name="login"><br>
+    rank <input type="input" name="rank"><br>
+    <input type="submit" value="Send" name="submit">
+</form>
+
+<form action="api.php?a=teamKick" method="post" enctype="multipart/form-data">
+    Team Kick<br>
+    team_id <input type="input" name="team_id"><br>
+    login <input type="input" name="login"><br>
+    <input type="submit" value="Send" name="submit">
+</form>
+
+</body>
+</html>

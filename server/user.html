@@ -1,0 +1,53 @@
+<meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="api.php?a=userAccountImage" method="post" enctype="multipart/form-data">
+    User Avatar Upload<br>
+    image <input type="file" name="image"><br>
+    <input type="submit" value="Send" name="submit">
+</form>
+
+<form action="api.php?a=userAccountInfo" method="post" enctype="multipart/form-data">
+    User Account Info<br>
+    <input type="submit" value="Send" name="submit">
+</form>
+
+<form action="api.php?a=userAccountEdit" method="post" enctype="multipart/form-data">
+    User Account Edit<br>
+    name <input type="input" name="name"><br>
+    password <input type="input" name="password"><br>
+    <input type="submit" value="Send" name="submit">
+</form>
+
+<form action="api.php?a=userLogin" method="post" enctype="multipart/form-data">
+    User Login<br>
+    login <input type="input" name="login"><br>
+    password <input type="input" name="password"><br>
+    <input type="submit" value="Send" name="submit">
+</form>
+
+<form action="api.php?a=userForgot" method="post" enctype="multipart/form-data">
+    User Forgot Password<br>
+    login <input type="input" name="login"><br>
+    <input type="submit" value="Send" name="submit">
+</form>
+
+<form action="api.php?a=userRegister" method="post" enctype="multipart/form-data">
+    User Register<br>
+    login <input type="input" name="login"><br>
+    password <input type="input" name="password"><br>
+    name <input type="input" name="name"><br>
+    image <input type="file" name="image"><br>
+    <input type="submit" value="Send" name="submit">
+</form>
+
+<form action="api.php?a=userInfo" method="post" enctype="multipart/form-data">
+    User Info<br>
+    login <input type="input" name="login"><br>
+    <input type="submit" value="Send" name="submit">
+</form>
+
+</body>
+</html>
